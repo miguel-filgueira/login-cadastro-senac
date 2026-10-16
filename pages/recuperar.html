@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ================ REMIXICON ========================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!-- ================ CSS ========================= -->
+
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <!-- ================ LOGIN JS ========================= -->
+
+    <script src="../assets/js/mostrarSenha.js" defer></script>
+    <script src="../assets/js/recuperaSenha.js" defer></script>
+
+    <title>Recuperar senha</title>
+
+</head>
+
+ 
+<body>
+    <!-- criar a tag main com a classe login -->
+
+    <main class="login">
+
+        <!-- colocar uma imagem com a tag correspondente use a classe login__img -->
+
+        <img src="../assets/image/imagem-recuperarsenha.jpg" alt="" class="login__img">
+
+        <!-- criar um formulario com a class login__form -->
+
+         <form class="login__form" id="recover-form">
+
+
+        <div
+
+          id="modal-error"
+
+          style="
+            display: none;
+            color: #d8f408;
+            font-size: .8rem;
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: auto;
+            padding: 1rem 0;
+            background-color: #000;
+            text-align: center;
+            border-radius: 10px;
+            z-index: 9999;"
+        >
+
+          <i class="ri-error-warning-line" id="email-error-icon"></i>
+
+          <span id="error-message"></span>
+
+        </div>
+
+ 
+
+        <h1 class="login__title">Recuperar Senha</h1>
+
+ 
+        <div class="login__content">
+
+          <div class="login__box" id="email-field">
+
+            <i class="ri-mail-line login__icon"></i>
+
+ 
+
+            <div class="login__box-input">
+
+              <input
+
+                type="email"
+
+                id="recover-email"
+
+                class="login__input"
+
+                placeholder=""
+
+              />
+
+ 
+
+              <label for="recover-email" class="login__label">E-mail</label>
+
+            </div>
+
+          </div>
+
+ 
+
+          <button type="click" class="login__button" id="send-code-button">
+
+            Enviar Código
+
+          </button>
+
+        </div>
+
+        <div id="code-entry-section" style="display: none">
+
+          <p class="login__info-text">
+
+          </p>
+
+          <br />
+
+          <div class="login__box">
+
+            <i class="ri-key-line login__icon"></i>
+
+            <div class="login__box-input">
+
+              <input
+
+                type="text"
+
+                id="verification-code"
+
+                class="login__input"
+
+                placeholder=""
+
+              />
+
+              <label for="verification-code" class="login__label"
+
+                >Código de Verificação</label
+
+              >
+
+            </div>
+
+          </div>
+
+          <br /><br />
+
+          <div class="login__box">
+
+            <i class="ri-lock-2-line login__icon"></i>
+
+            <div class="login__box-input">
+
+              <input
+
+                type="password"
+
+                id="login-pass"
+
+                class="login__input"
+
+                placeholder=""
+                
+
+              />
+
+              <label for="login-pass" class="login__label">Nova Senha</label>
+
+              <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+
+            </div>
+
+          </div>
+
+          <br /><br />
+
+          <div class="login__box">
+
+            <i class="ri-lock-2-line login__icon"></i>
+
+            <div class="login__box-input">
+
+              <input
+
+                type="password"
+
+                id="cadastro-pass-confirm"
+
+                class="login__input"
+
+                placeholder=""
+                
+
+              />
+
+              <label for="login-pass-confirm" class="login__label"
+
+                >Confirmar Nova Senha</label
+
+              >
+
+              <i class="ri-eye-off-line login__eye" id="login-eye-confirm"></i>
+
+            </div>
+
+          </div>
+
+ 
+
+          <br />
+
+          <button type="submit" class="login__button" id="verify-code-button">
+
+            Redefinir Senha
+
+          </button>
+
+        </div>
+
+
+        <p class="login__register">
+
+          Lembrou da senha? <a href="../index.html">Voltar para o Login</a>
+
+        </p>
+
+      </form>
+
+    </main>
+
+</body>
+</html>
+

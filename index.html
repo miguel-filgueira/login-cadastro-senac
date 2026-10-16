@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+ 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ================ REMIXICON ========================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!-- ================ CSS ========================= -->
+
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!-- ================ LOGIN JS ========================= -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="assets/js/mostrarSenha.js" defer></script>
+    <script src="assets/js/firebase-config.js" defer></script>
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <!-- criar a tag main com a classe login -->
+
+    <main class="login">
+
+        <!-- colocar uma imagem com a tag correspondente use a classe login__img -->
+
+        <img src="assets/image/imagem-Login.jpg" alt="" class="login__img">
+
+ 
+
+        <!-- criar um formulario com a class login__form -->
+
+        <form class="login__form">
+
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__content">
+
+                <div class="login__box">
+
+                    <i class="ri-user-3-line login__icon"></i>
+
+                    <div class="login__box-input">
+
+                        <input type="email" id="login-email" class="login__input" required placeholder="">
+
+                        <label for="login-email" class="login__label">E-mail</label>
+
+                    </div>
+
+                </div>
+
+                <div class="login__box">
+
+
+                    <i class="ri-lock-2-line login__icon"></i>
+
+                    <div class="login__box-input">
+
+                        <input type="password" id="login-pass" class="login__input" required placeholder="">
+
+ 
+                        <label for="login-pass" class="login__label">Password</label>
+
+                    </div>
+
+                    <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+
+                </div>
+
+ 
+
+                <div class="login__check">
+
+                    <div class="login__check-group">
+
+                        <input type="checkbox" id="login-check" class="login__check-input">
+
+                        <label for="login-check" class="login__check-label">Remember me</label>
+
+                    </div>
+
+                    <a href="pages/recuperar.html" class="login__forgot">Forgot Password</a>
+
+                </div>
+
+                <button type="submit" class="login__button">login</button>
+
+                <button type="button" id="google-login" class="login__button">
+                    <i class="ri-google-fill"></i>
+                    Entrar com Google
+                </button>
+
+                <p class="login__register">
+
+                    Don't have an account?
+
+                    <a href="pages/cadastro.html">Register</a>
+
+                </p>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
+
